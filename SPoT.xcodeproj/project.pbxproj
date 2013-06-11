@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE119F1717673FB9000889DF /* SPoTTagTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE119F1617673FB9000889DF /* SPoTTagTVC.m */; };
 		CE931ED117670682000D637C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE931ED017670682000D637C /* UIKit.framework */; };
 		CE931ED317670682000D637C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE931ED217670682000D637C /* Foundation.framework */; };
 		CE931ED517670682000D637C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE931ED417670682000D637C /* CoreGraphics.framework */; };
@@ -20,9 +21,12 @@
 		CE931EED17670682000D637C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE931EEB17670682000D637C /* MainStoryboard_iPad.storyboard */; };
 		CE931EF017670682000D637C /* SPoTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE931EEF17670682000D637C /* SPoTViewController.m */; };
 		CE931EFA17670787000D637C /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE931EF917670787000D637C /* FlickrFetcher.m */; };
+		CE931F00176720E8000D637C /* SPoTTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE931EFF176720E8000D637C /* SPoTTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE119F1517673FB9000889DF /* SPoTTagTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPoTTagTVC.h; sourceTree = "<group>"; };
+		CE119F1617673FB9000889DF /* SPoTTagTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPoTTagTVC.m; sourceTree = "<group>"; };
 		CE931ECD17670682000D637C /* SPoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE931ED017670682000D637C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE931ED217670682000D637C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +47,8 @@
 		CE931EF717670787000D637C /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
 		CE931EF817670787000D637C /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		CE931EF917670787000D637C /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		CE931EFE176720E8000D637C /* SPoTTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPoTTVC.h; sourceTree = "<group>"; };
+		CE931EFF176720E8000D637C /* SPoTTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPoTTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,10 @@
 			children = (
 				CE931EE817670682000D637C /* MainStoryboard_iPhone.storyboard */,
 				CE931EEB17670682000D637C /* MainStoryboard_iPad.storyboard */,
+				CE931EFE176720E8000D637C /* SPoTTVC.h */,
+				CE931EFF176720E8000D637C /* SPoTTVC.m */,
+				CE119F1517673FB9000889DF /* SPoTTagTVC.h */,
+				CE119F1617673FB9000889DF /* SPoTTagTVC.m */,
 				CE931EEE17670682000D637C /* SPoTViewController.h */,
 				CE931EEF17670682000D637C /* SPoTViewController.m */,
 				CE931EF617670787000D637C /* FlickrFetcher */,
@@ -197,6 +207,8 @@
 				CE931EE117670682000D637C /* SPoTAppDelegate.m in Sources */,
 				CE931EF017670682000D637C /* SPoTViewController.m in Sources */,
 				CE931EFA17670787000D637C /* FlickrFetcher.m in Sources */,
+				CE931F00176720E8000D637C /* SPoTTVC.m in Sources */,
+				CE119F1717673FB9000889DF /* SPoTTagTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +341,7 @@
 				CE931EF517670682000D637C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
