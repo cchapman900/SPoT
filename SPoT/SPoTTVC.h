@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlickrFetcher.h"
 
 @interface SPoTTVC : UITableViewController
+
+- (NSMutableDictionary *) tagsAndCount;
+-(NSArray *)tags;
+
+-(NSMutableArray *)photosWithTag:(NSString *)tag;
 
 @end

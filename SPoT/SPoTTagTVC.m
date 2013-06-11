@@ -16,6 +16,7 @@
 
 @implementation SPoTTagTVC
 
+
 -(void)setTagTitle:(NSString *)tagTitle
 {
     _tagTitle = tagTitle;
@@ -30,10 +31,27 @@
 
 - (NSString *)titleForRow:(NSUInteger)row
 {
+    return [self photosWithTag:self.tagTitle][row][FLICKR_PHOTO_TITLE];
 }
 
 - (NSString *)subtitleForRow:(NSUInteger)row
 {
+    NSLog(@"%@",[[self photosWithTag:self.tagTitle][row] valueForKeyPath:FLICKR_PHOTO_DESCRIPTION]) ;
+    return [[self photosWithTag:self.tagTitle][row] valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    //#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    
+    //NSLog(@"Number of cells: %d",[self.stanfordPhotos count]);
+    //return [self.stanfordPhotos count];
+    
+    NSLog(@"%d",[[self photosWithTag:self.tagTitle] count]);
+    
+    return [[self photosWithTag:self.tagTitle] count];
 }
 
 

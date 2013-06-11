@@ -7,7 +7,6 @@
 //
 
 #import "SPoTTVC.h"
-#import "FlickrFetcher.h"
 
 @interface SPoTTVC ()
 
@@ -105,6 +104,19 @@
             }
         }
     }
+}
+
+-(NSMutableArray *)photosWithTag:(NSString *)tag
+{
+    NSMutableArray *taggedPhotos = [[NSMutableArray alloc] init];
+    for (NSDictionary *photo in self.stanfordPhotos) {
+        NSRange range = [photo[FLICKR_TAGS] rangeOfString:tag options:NSCaseInsensitiveSearch ];
+        if (range.location != NSNotFound) {
+            [taggedPhotos addObject:photo];
+        }
+    }
+    
+    return taggedPhotos;
 }
 
 //end my methods
