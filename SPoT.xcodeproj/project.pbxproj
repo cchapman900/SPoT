@@ -19,6 +19,7 @@
 		CE931EEA17670682000D637C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE931EE817670682000D637C /* MainStoryboard_iPhone.storyboard */; };
 		CE931EED17670682000D637C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE931EEB17670682000D637C /* MainStoryboard_iPad.storyboard */; };
 		CE931EF017670682000D637C /* SPoTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE931EEF17670682000D637C /* SPoTViewController.m */; };
+		CE931EFA17670787000D637C /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CE931EF917670787000D637C /* FlickrFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,9 @@
 		CE931EEC17670682000D637C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		CE931EEE17670682000D637C /* SPoTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPoTViewController.h; sourceTree = "<group>"; };
 		CE931EEF17670682000D637C /* SPoTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPoTViewController.m; sourceTree = "<group>"; };
+		CE931EF717670787000D637C /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		CE931EF817670787000D637C /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		CE931EF917670787000D637C /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +89,11 @@
 		CE931ED617670682000D637C /* SPoT */ = {
 			isa = PBXGroup;
 			children = (
-				CE931EDF17670682000D637C /* SPoTAppDelegate.h */,
-				CE931EE017670682000D637C /* SPoTAppDelegate.m */,
 				CE931EE817670682000D637C /* MainStoryboard_iPhone.storyboard */,
 				CE931EEB17670682000D637C /* MainStoryboard_iPad.storyboard */,
 				CE931EEE17670682000D637C /* SPoTViewController.h */,
 				CE931EEF17670682000D637C /* SPoTViewController.m */,
+				CE931EF617670787000D637C /* FlickrFetcher */,
 				CE931ED717670682000D637C /* Supporting Files */,
 			);
 			path = SPoT;
@@ -99,6 +102,8 @@
 		CE931ED717670682000D637C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE931EDF17670682000D637C /* SPoTAppDelegate.h */,
+				CE931EE017670682000D637C /* SPoTAppDelegate.m */,
 				CE931ED817670682000D637C /* SPoT-Info.plist */,
 				CE931ED917670682000D637C /* InfoPlist.strings */,
 				CE931EDC17670682000D637C /* main.m */,
@@ -108,6 +113,16 @@
 				CE931EE617670682000D637C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE931EF617670787000D637C /* FlickrFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				CE931EF717670787000D637C /* FlickrAPIKey.h */,
+				CE931EF817670787000D637C /* FlickrFetcher.h */,
+				CE931EF917670787000D637C /* FlickrFetcher.m */,
+			);
+			path = FlickrFetcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +196,7 @@
 				CE931EDD17670682000D637C /* main.m in Sources */,
 				CE931EE117670682000D637C /* SPoTAppDelegate.m in Sources */,
 				CE931EF017670682000D637C /* SPoTViewController.m in Sources */,
+				CE931EFA17670787000D637C /* FlickrFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
