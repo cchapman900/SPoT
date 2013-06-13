@@ -18,12 +18,11 @@ Materials
 • This is a completely new application, so you will not need anything (but the knowledge you have gained) from your previous homework assignments.
 • You will need the FlickrFetcher helper code (download from the same place you found this document).
 • You will need to obtain a Flickr API key. A free Flickr account is just fine (you won’t be posting photos, just querying them).
-￼￼￼￼￼PAGE 1 OF 7 ASSIGNMENT IV: SPOT
-￼CS193P IPHONE APPLICATION DEVELOPMENT WINTER 2013
 
 
 
-￼￼Required Tasks:
+
+Required Tasks:
 1. You will be using the method stanfordPhotos in the provided FlickrFetcher helper code to get an NSArray of Flickr photos of various sites on the Stanford campus. Each entry in the NSArray is an NSDictionary object with numerous entries which describe the photo (more on this below). FlickrFetcher.h has #defines for the keys.
 
 2. Your user-interface should present a UITabBarController-based UI with two tabs, each of which contains its own navigation (i.e. UINavigationController-based) stack. One tab lets you browse (in the manner described below) all of the photos returned in the above query and another which maintains a list of the photos the user has most recently viewed in your application.
@@ -46,7 +45,7 @@ Materials
 
 
 
-￼Hints:
+Hints:
 These hints are not required tasks. They are completely optional. Following them may make the assignment a little easier (no guarantees though!).
 
 1. After you copy in the FlickrFetcher helper files, put your own Flickr API key into FlickrAPIKey.h or your queries will not work.
